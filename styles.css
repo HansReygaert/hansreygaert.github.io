@@ -1,0 +1,19 @@
+:root{
+    --dark-background: rgb(45, 45, 45);
+}
+
+body{
+    background-color: var(--dark-background);   
+}
+.welcome-image{
+    position:absolute;
+    height: 70vh;
+    padding: 1rem;
+    border-radius: 1.2rem;
+}
+.welcome-text{
+    position: relative;
+    color:whitesmoke;
+    top: 60vh;
+    left: 100%;
+}
