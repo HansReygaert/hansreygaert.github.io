@@ -1,19 +1,22 @@
 :root{
-    --dark-background: rgb(45, 45, 45);
+    --dark: rgb(45, 45, 45);
+    --light: rgb(255,255,255);
 }
 
 body{
-    background-color: var(--dark-background);   
+    background-color: var(--dark);
+    color: var(--light);   
 }
 .welcome-image{
-    position:absolute;
-    height: 70vh;
-    padding: 1rem;
-    border-radius: 1.2rem;
+    position:absolute; 
+    height: 80vh;
+    border-radius: 2%;
 }
 .welcome-text{
-    position: relative;
-    color:whitesmoke;
-    top: 60vh;
-    left: 100%;
+    position:relative;
+    font-size:xx-large;
+    background-color: var(--dark);
+    color:var(--light);
+    top: 70vh;
+    left: 30%;
 }
