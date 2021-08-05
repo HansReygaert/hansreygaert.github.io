@@ -1,0 +1,23 @@
+In my portfolio: 
+   - Welcome page 
+   - About me: 
+      + Languages: 
+         - HTML 
+         - CSS
+         - JS 
+         - Java 
+         - C#
+      
+   - Hobbies: 
+      - Play the guitar
+      - Play Rocket League 
+      - Reading a book 
+   - Interests: 
+      * Programming 
+         - Data structures
+         - Algorithms 
+         - Software Architecture
+
+
+Interesting layouts: 
+   - 

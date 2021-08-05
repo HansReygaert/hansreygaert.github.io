@@ -3,23 +3,19 @@
 :root{
     --dark: rgb(45, 45, 45);
     --light: rgb(255,255,255);
+    --primary-color: rgb(15, 15, 248);
+    --inactive-background: rgb(150,150,150);
 }
 
-body{
-    background-color: var(--dark);
-    color: var(--light);   
+.logo{
+    border: 2px solid; 
+    border-radius: 6%;
+    border-color: var(--primary-color);
+    padding: 0.2em 0.3em;
+    transition: transform 0.35s ease-out; 
 }
-.welcome-image{
-    position:absolute; 
-    float: left;
-    height: 80vh;
-    border-radius: 2%;
-}
-.welcome-text{
-    position:relative;
-    font-size:xx-large;
-    background-color: var(--dark);
-    color:var(--light);
-    top: 70vh;
-    left: 30%;
+.logo:hover{
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+    transform: scale(1.2,1.2);
 }
