@@ -4,9 +4,15 @@
 
 /*  @TODO: 
 
-    Fix the logo so it has the same gradient style
-    as the buttons
-    (clip padding-box and ::after to fake it)
+    1.Fix the logo 
+        - Same gradient style as the rest
+        - Fix it in a solid location, in responsive design it's all over the place
+    2. Fix the spacing on the main screen
+        - Things need to be more centered
+        - Bitmoji is not lined up well 
+        - Still too empty, fill up the place better
+          Especially the bitmoji is just so lonely....
+    
  */
 
 /* START NAVIGATION  */
@@ -14,6 +20,7 @@
     border: 2px solid; 
     border-radius: 6%;
     border-color: var(--primary-color);
+    margin-left: 10%;
     
     letter-spacing: -0.3em;
 
@@ -32,10 +39,10 @@
     box-shadow: 0 0 5px 5px var(--primary-color);
 }
 
-.header_area .main-menu .navbar .navbar-brand{
+.header_area .main-menu .navbar{
     margin-left: 5rem;  
 }
-.header_area .main-menu .navbar{
+.header_area.main-menu.navbar{
     padding: 1rem 20rem; 
 }
 .header_area .main-menu .nav-item .nav-link{ 
@@ -67,6 +74,10 @@
 /* END NAVIGATION  */
 
 /* BANNER AREA */
+.site-main .site-banner {
+    background: url(../images/backgrounds/abstract-technology-background-with-circuit-board-style-structur-vector.jpg) no-repeat 22% 82%;
+}
+
    .site-main .site-banner .site-title h3{
        padding-top: 35%;
        font-weight: 500;
@@ -83,11 +94,16 @@
 
    .site-main .site-banner .site-title h1{
        font-size: 5rem; 
+       font-stretch: wider;
+       line-height: 1em;
+
    }
    .site-main .site-banner .site-title h4{
     font-size: 1.5rem;
    }
    .site-main .site-banner .banner-image > img{
+    margin-top: 30%;
+    border-bottom: 20px;;
     padding: 7rem 0;
     width: 90rem;
    }
