@@ -14,15 +14,18 @@
 
 </head>
 <body>
-  <!-- NAVBAR  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- START NAVBAR  -->
+   <header class="header_area">
+     <div class="main-menu pb-4">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#">HR </a>
+          <a class="navbar-brand logo" href="#">HR</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="me-auto"></div>
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -30,14 +33,47 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">About Me</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Interests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-<section id="welcome">
-
-</section> 
-    <!-- BOOTSTRAP JS INCL POPPER -->
+     </div>
+   </header>
+   <!-- END NAVBAR -->
+   <!-- START MAIN AREA  -->
+    <main class="site-main">
+      <!-- START BANNER AREA -->
+      <section class="site-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 site-title">
+              <h3 class="title-text">Hi</h3>
+              <h1 class="title-text text-uppercase">I am Hans</h1>
+              <h4 class="title-text text-uppercase">Aspiring Full Stack Developer</h4>
+              <div class="site-buttons">
+                <div class="d-flex flew-row flex-wrap">
+                  <button type="button"	class="btn button primary-button text-uppercase">Find out more about me</button>
+                  <button type="button"	class="btn button secondary-button text-uppercase">See my blog</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <img src="bitmoji/bitmoji_hi4.png" alt="banner-image" class="img-fluid banner-image">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END BANNER AREA -->
+    </main>
+   <!-- END MAIN AREA -->
+   
+   <!-- BOOTSTRAP JS INCL POPPER -->
 <script src="scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
