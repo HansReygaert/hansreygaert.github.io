@@ -62,3 +62,56 @@ p.para{
    font: normal 500 16px/25px 
    var(--main-font);
 }
+p.para span{
+   padding-right: 0.5rem;
+}
+p.para a{
+   color: var(--text-color);
+}
+
+.card{
+   background-color: var(--light);
+   border-radius: 1rem;
+   padding: 1rem;
+   margin-left: var(--card-distance);
+   box-shadow: var(--box-shadow);
+   transition: 0.2s;
+
+   font: normal 500 16px/25px 
+   var(--main-font);    
+   width: 15rem;
+   height:auto;
+   text-align: center;
+}
+   .card a{
+       text-decoration: none;
+       color: var(--dark); 
+   }
+   card:not(first-child){
+       margin-left: var(--card-distance);
+   }
+
+   .card:hover,
+   .card:focus-within
+   {
+       transition: 0.2s;
+       transform: translateY(-2.5rem);
+   }
+
+   .card:hover ~.card,
+   .card:focus-within ~.card{
+       transform: translateX(
+           calc(var(--card-distance) * -1));
+   }
+
+   .card .card-title{
+       margin-top: 1rem;
+   }
+
+   .card span{
+       color: var(--dark);
+   }
+
+   .card:nth-child(1){
+      color:red;
+   }

@@ -31,10 +31,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Interests</a>
+                <a class="nav-link" href="#interests">Interests</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
@@ -53,12 +53,12 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 align-baseline">
-              <div class="mx-auto">
+              <div class="banner-image">
                 <img src="bitmoji/bitmoji_hi3.png" 
-                alt="banner-image" class="img-fluid banner-image">
+                alt="banner-image" class="img-fluid">
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 site-title">
+            <div class="col-lg-6 col-md-12 site-title justify-content-center">
               <h3 class="title-text">Hi</h3>
               <h1 class="title-text text-uppercase">I am Hans</h1>
               <h4 class="title-text text-uppercase">Aspiring Full Stack Developer</h4>
@@ -67,47 +67,145 @@
                   <button type="button"	class="btn button primary-button text-uppercase">Find out more about me</button>
                   <button type="button"	class="btn button secondary-button text-uppercase">See my blog</button>
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
       </section>
       <!-- END BANNER AREA -->
-      <div class="whitespace"><br></div>
+      <div class="whitespace-lg"><br></div>
       <!-- START ABOUT ME  -->
-      <section id="about-me">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 about-title">
-              <h2 class="text-uppercase pt-5">
-                <span>Let me</span>
-                <span>introduce</span>
-                <span>myself</span>
-              </h2>
-              <div class="paragraph py-4 w-75">
-                <p class="para">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consectetur aliquam, molestias sint dolor optio tempore nemo eum ipsam rem autem, temporibus similique, facere dolorem vitae? Blanditiis animi dolorem nemo?
-                </p>
-                <p class="para">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aliquid eligendi laborum nihil unde voluptate fugiat incidunt commodi consequuntur cum. 
-                </p>
-                <button type="button" class="btn button primary-button text-uppercase">
-                  See my github
-                </button>
+      <section class="about-area" id="about-me">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-image justify-content-center">
+                      <div class="container-resize">
+                        <img src="./images/hans_faceshot_008-cropped.jpg" alt="About us" class="img-fluid">
+                        <div class="glow-wrap"><i class="glow"></i></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 about-title">
+                    <h2 class="text-uppercase pt-5">
+                        <span>Let me</span>
+                        <span>introduce</span>
+                        <span>myself</span>
+                    </h2>
+                    <div class="paragraph py-4 w-75">
+                        <p class="para">
+                          <span class="fas fa-map-marker-alt">
+                            <span class="sr-only">Location:</span>
+                          <a href="https://www.google.be/maps/place/9160+Lokeren/" target="_blank">Lokeren, Belgium</a></span> 
+                          <span class="fas fa-baby-carriage">
+                            <span class="sr-only">Age:</span>
+                          </span> 33 years old
+                          <span class="fas fa-comment-dots">
+                            <span class="sr-only">Language</span>
+                          </span> English/Dutch
+                        </p>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro, earum eaque delectus fugit amet nulla obcaecati aperiam assumenda fugiat natus quis temporibus, dolorum laudantium! Cupiditate fuga eius blanditiis. Optio.
+                        </p>
+                    </div>
+                    <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- END ABOUT ME  -->
+      <!-- START DETAILS -->
+      <section class="about-details" id="interests">
+        <div class="whitespace-sm"><br></div>
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="col col-md-6">
+              <div class="cards d-flex justify-content-end">
+                <div class="card">
+                  <a href="javascript:delay('#guitar')">
+                    <h2><span class="fas fa-guitar fa-2x card-icon"></span></h2>
+                    <strong class="card-title d-none d-lg-block">guitar</strong>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="javascript:delay('#foodie')">
+                    <h2 class="card-title"><span class="fas fa-pizza-slice fa-2x card-icon"></span></h2>
+                    <strong class="card-title d-none d-lg-block">foodie</strong>
+                  </a>
+                </div>
+                <div class="card">
+                  <!-- Delaying these for touch screens, 
+                    otherwise we navigate to the link before the animation can take place -->
+                  <a href="javascript:delay('#code')">
+                    <h2><span class="fas fa-code fa-2x card-icon"></span></h2>
+                    <strong class="card-title d-none d-lg-block">code</strong>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="about-image">
-                <img src="images/hans_faceshot_008-cropped.jpg" alt="About Me" class="img-fluid">
+            <div class="col col-md-6">
+              <div class="cards d-flex justify-content-start">
+                <div class="card">
+                  <a href="javascript:delay('#rocket-league')">
+                    <h2><span class="fas fa-car fa-2x card-icon"></span></h2>
+                    <strong class="card-title d-none d-lg-block">rocket <br> league </strong> 
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="javascript:delay('#wine')">
+                    <h2><span class="fas fa-wine-bottle fa-2x card-icon"></span></h2>
+                    <strong class="card-title d-none d-lg-block">wine</strong>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="javascript:delay('#reading')">
+                    <h2 class="card-title"><span class="fas fa-book-open fa-2x  card-icon"></span></h2>
+                    <strong class="card-title d-none d-lg-block">reading</strong>
+                  </a>
+                </div>
               </div>
+            </div>
+            <div class="whitespace-lg"></div>
+            <div class="col-lg-12 col-md-12">
+              <section id="code">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
+                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
+                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
+              </section>
+              <div class="whitespace-lg"></div>
+              <section id="guitar">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
+                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
+                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
+              </section>
+              <div class="whitespace-lg"></div>
+              <section id="foodie">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
+                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
+                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
+              </section>
+              <div class="whitespace-lg"></div>
+              <section id="rocket-league">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
+                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
+                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
+            </section>
+            <div class="whitespace-lg"></div>
+              <section id="wine">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
+                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
+                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
+              </section>
+              <div class="whitespace-lg"></div>
+              <section id="reading">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
+                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
+                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
+              </section>
+
             </div>
           </div>
         </div>
-      </section>
-      <!-- END ABOUT ME  -->
-      <!-- START DETAILS -->
-      <section class="details">
-        
       </section>
       <!-- END DETAILS -->
     </main>
@@ -115,5 +213,6 @@
    
    <!-- BOOTSTRAP JS INCL POPPER -->
 <script src="scripts/bootstrap.bundle.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>

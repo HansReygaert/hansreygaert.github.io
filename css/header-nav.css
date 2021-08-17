@@ -1,0 +1,58 @@
+.logo{
+   border: 2px solid; 
+   border-radius: 6%;
+   border-color: var(--primary-color);
+   /* margin-left: 5%; */
+   
+   letter-spacing: -0.3em;
+
+   padding: 0.2em 0.3em;
+   padding-right: 0.6em;
+   /* Render problem with letter spacing */
+   /* Reduces spacing mismatches offset of padding */
+   
+   transition: transform 0.35s ease-out; 
+}
+.logo:hover{
+   transition-timing-function: ease-in-out;
+   transition-property: all;
+   transform: scale(1.2,1.2);
+   border-radius:16%;
+   box-shadow: 0 0 5px 5px var(--primary-color);
+}
+
+.header_area .main-menu .navbar{
+   margin-left: 5rem;  
+}
+.header_area.main-menu.navbar{
+   padding: 1rem 20rem; 
+}
+.header_area .main-menu 
+.nav-item .nav-link{ 
+   font: normal 400 15px/2px var(--main-font);
+   text-transform: uppercase;
+   padding: 1.7rem;
+}
+
+.header_area .main-menu 
+.navbar-nav .active a{
+   color: var(--primary-color);
+
+   background: var(--gradient-color);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}
+.header_area .main-menu 
+.navbar-nav a:hover{
+   color: var(--primary-color);
+
+   background: var(--gradient-color);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   
+   font-weight: 400;
+   border-bottom: 1px solid;   
+   
+}

@@ -1,0 +1,73 @@
+
+
+.site-main .about-area{
+   padding: 5% 5%;
+}
+.site-main .about-area 
+.about-title h2 > span{
+   display: block;
+   font: normal bold 49px/ 60px 
+   var(--roboto);
+   letter-spacing: 21px;
+}
+
+.site-main .about-area
+.about-image .container-resize{
+   transform: translate(-5%, -5%);
+   display: block;   
+}
+.site-main .about-area 
+.about-image .container-resize img { 
+   border-radius: 5%;
+   box-shadow: 10px 15px 25px 0
+    rgba(0,0,0,0.3);
+}
+
+.site-main .about-area 
+.about-image img:hover{
+   box-shadow: 1px 1px 10px 0 
+   rgba(0,0,0,.1);
+}
+
+.site-main .about-area 
+.about-image .glow-wrap{
+   overflow: hidden;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   margin-top: -10px;
+}
+
+.site-main .about-area 
+.about-image .glow{
+   display: block;
+   width: 40%;
+   height: 200%;
+   background: rgba(255,255,255,.2);
+   top: 0;
+   filter: blur(5px);
+   transform: rotate(45deg) 
+   translate(-450%, 0);
+   transition: all .5s 
+   cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.site-main .about-area 
+.about-image:hover .glow{
+   transform: rotate(45deg) translate(450%, 0);
+   transition: all 1s 
+   cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.site-main .about-area 
+.about-image:hover img,
+.site-main .about-area 
+.about-image:hover .glow-wrap{
+   margin-top: 0;
+}
+
+.site-main .about-area 
+.about-title .paragraph > p{
+   padding: .4rem 0;
+}
