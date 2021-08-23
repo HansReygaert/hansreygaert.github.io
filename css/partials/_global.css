@@ -19,6 +19,10 @@
    border-radius: 4px;
 }
 
+.button .button.primary-button.a{
+   text-decoration: none;
+}
+
 .button.primary-button{ 
    background: var(--gradient-color);
    background-clip: padding-box;
@@ -99,19 +103,24 @@ p.para a{
    }
 
    .card:hover ~.card,
-   .card:focus-within ~.card{
+   .card:focus-within .card{
        transform: translateX(
            calc(var(--card-distance) * -1));
-   }
-
-   .card .card-title{
-       margin-top: 1rem;
    }
 
    .card span{
        color: var(--dark);
    }
 
-   .card:nth-child(1){
-      color:red;
-   }
+   
+.whitespace-sm{
+   margin: 3%;
+}
+
+.whitespace-md{
+   margin: 5%;
+}
+
+.whitespace-lg{
+   margin: 10%;
+}

@@ -81,7 +81,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="about-image justify-content-center">
                       <div class="container-resize">
-                        <img src="./images/hans_faceshot_008-cropped.jpg" alt="About us" class="img-fluid">
+                        <img src="./images/hans/hans_faceshot_008-cropped.jpg" alt="About me" class="img-fluid ms-4">
                         <div class="glow-wrap"><i class="glow"></i></div>
                       </div>
                     </div>
@@ -100,15 +100,20 @@
                           <span class="fas fa-baby-carriage">
                             <span class="sr-only">Age:</span>
                           </span> 33 years old
-                          <span class="fas fa-comment-dots">
+                          <span class="fas fa-comment-dots ms-1">
                             <span class="sr-only">Language</span>
                           </span> English/Dutch
                         </p>
                         <p class="para">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel porro, earum eaque delectus fugit amet nulla obcaecati aperiam assumenda fugiat natus quis temporibus, dolorum laudantium! Cupiditate fuga eius blanditiis. Optio.
+                          
                         </p>
                     </div>
-                    <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                    <button type="button" 
+                    class="btn button primary-button text-uppercase d-flex align-items-center"
+                    onclick="window.open('https://github.com/HansReygaert'), '_blank';">
+                      <span class="fab fa-github-square fa-2x me-2"></span>
+                      See My Github
+                    </button>
                 </div>
             </div>
         </div>
@@ -118,101 +123,77 @@
       <section class="about-details" id="interests">
         <div class="whitespace-sm"><br></div>
         <div class="container-fluid">
-          <div class="row ">
+          <div class="row ms-5 me-5">
             <div class="col col-md-6">
-              <div class="cards d-flex justify-content-end">
-                <div class="card">
+              <!-- START CARDS -->
+              <div class="cards d-flex .justify-content-md-center .justify-content-lg-end">
+                <button class="card justify-content-center align-items-center" onclick="displayGuitarHtml(this)">
+                  <!-- Delaying these for touch screens, 
+                    otherwise we navigate to the link before the animation can take place -->
                   <a href="javascript:delay('#guitar')">
                     <h2><span class="fas fa-guitar fa-2x card-icon"></span></h2>
-                    <strong class="card-title d-none d-lg-block">guitar</strong>
+                    <strong class="card-title d-none d-lg-block">Play <br> the guitar</strong>
                   </a>
-                </div>
-                <div class="card">
+                </button>
+                <button class="card justify-content-center align-items-center" onclick="displayFoodieHtml()">
                   <a href="javascript:delay('#foodie')">
                     <h2 class="card-title"><span class="fas fa-pizza-slice fa-2x card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">foodie</strong>
                   </a>
-                </div>
-                <div class="card">
-                  <!-- Delaying these for touch screens, 
-                    otherwise we navigate to the link before the animation can take place -->
+                </button>
+                <button class="card justify-content-center align-items-center" onclick="displayCodeHtml()">
                   <a href="javascript:delay('#code')">
                     <h2><span class="fas fa-code fa-2x card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">code</strong>
                   </a>
-                </div>
+                </button>
               </div>
             </div>
-            <div class="col col-md-6">
-              <div class="cards d-flex justify-content-start">
-                <div class="card">
+            <div class="col col-md-6 .justify-content-md-center .justify-content-lg-start">
+              <div class="cards d-flex">
+                <button class="card justify-content-center align-items-center" onclick="displayRocketLeagueHtml()">
                   <a href="javascript:delay('#rocket-league')">
                     <h2><span class="fas fa-car fa-2x card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">rocket <br> league </strong> 
                   </a>
-                </div>
-                <div class="card">
+                </butt>
+                <button class="card justify-content-center align-items-center" onclick="displayWineHtml()">
                   <a href="javascript:delay('#wine')">
                     <h2><span class="fas fa-wine-bottle fa-2x card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">wine</strong>
                   </a>
-                </div>
-                <div class="card">
+                </button>
+                <button class="card justify-content-center align-items-center" onclick="displayReadingHtml()">
                   <a href="javascript:delay('#reading')">
                     <h2 class="card-title"><span class="fas fa-book-open fa-2x  card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">reading</strong>
                   </a>
-                </div>
+                </button>
               </div>
             </div>
-            <div class="whitespace-lg"></div>
-            <div class="col-lg-12 col-md-12">
-              <section id="code">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
-                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
-                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
+            <div class="whitespace-sm"></div>
+            <div class="col-lg-10 col-md-10 justify-content-center">
+              <section class="card-interests">
+                <p>
+                  <!-- SCRIPT INJECTS CARD CONTENT HERE -->
+                
+                </p>
               </section>
-              <div class="whitespace-lg"></div>
-              <section id="guitar">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
-                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
-                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
-              </section>
-              <div class="whitespace-lg"></div>
-              <section id="foodie">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
-                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
-                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
-              </section>
-              <div class="whitespace-lg"></div>
-              <section id="rocket-league">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
-                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
-                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
-            </section>
-            <div class="whitespace-lg"></div>
-              <section id="wine">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
-                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
-                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
-              </section>
-              <div class="whitespace-lg"></div>
-              <section id="reading">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat reiciendis incidunt praesentium! Suscipit accusantium deserunt, eos possimus quae nobis commodi repellendus doloremque eveniet delectus nihil, quod dolorum, tempora quam.
-                  Corrupti inventore tempora illum cum praesentium laborum possimus neque suscipit odit, repellendus non quisquam reprehenderit nulla sint hic ab aliquid, numquam recusandae laudantium fugit doloremque! Autem sit quasi necessitatibus esse!
-                  Molestiae, eum deleniti sapiente asperiores omnis quam culpa fuga! Mollitia expedita possimus magni. Magnam, nihil, dolorum cupiditate saepe nisi enim ab maxime libero assumenda quisquam officiis sed dicta tenetur est!</p>
-              </section>
-
             </div>
           </div>
+          <!-- END CARDS -->
         </div>
       </section>
       <!-- END DETAILS -->
+      <div class="whitespace-lg"><i>_</i></div>
     </main>
    <!-- END MAIN AREA -->
    
    <!-- BOOTSTRAP JS INCL POPPER -->
 <script src="scripts/bootstrap.bundle.min.js"></script>
-<script src="scripts/script.js"></script>
+<script src="scripts/jquery-3.6.0.js"></script>
+<!-- Uses JQUERY, so load last -->
+<script src="scripts/script.js"></script> 
+
 </body>
 </html>

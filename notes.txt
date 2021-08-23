@@ -79,3 +79,4 @@ Fontawesome icons to use:
    HTML5
 	fa fa-html5
 
+So here's an idea, how about I sticky the logo and when clicked show the navbar ? 

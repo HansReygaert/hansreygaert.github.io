@@ -71,3 +71,15 @@
 .about-title .paragraph > p{
    padding: .4rem 0;
 }
+
+.site-main .about-area 
+.about-title .paragraph 
+.para span{
+   font-weight: 500;
+}
+
+.site-main .about-area 
+.about-title .paragraph 
+.para a{
+   font-family: var(--main-font);
+}

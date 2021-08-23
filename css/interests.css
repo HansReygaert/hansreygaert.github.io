@@ -1,0 +1,48 @@
+.site-main .about-details
+.card .card-icon{
+    margin-bottom: 1rem;
+}
+
+.site-main .about-details
+.card .card-icon,
+.site-main .about-details
+.card .card-title
+{
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+
+    font-weight: 500;
+    text-transform: capitalize;
+    padding:0;
+}
+
+#interests > p{
+    font: var(--main-font);
+    font-weight: 400;
+}
+
+#interests .card-interests{
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    margin: 5rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+#interests .card-interests 
+.guitar img {
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+#interests .card-interests
+.guitar .artists{
+    height: 10rem;
+}
+
+#interests .card-interests
+.guitar .artists > img{
+    /* border-radius: 50%; */
+}

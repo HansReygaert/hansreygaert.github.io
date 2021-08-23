@@ -1,20 +1,14 @@
-@import url(fonts.css);
-@import url(./partials/_variables.css);
-@import url(./partials/_global.css);
-
 /*  @TODO: 
 
     1.Fix the logo 
         - Same gradient style as the rest
         - Fix it in a solid location, in responsive design it's all over the place
-    2. Fix the spacing on the main screen
-        - Things need to be more centered
-        - Bitmoji is not lined up well 
-        - Still too empty, fill up the place better
-          Especially the bitmoji is just so lonely....
-    3. Refactor the styles css files
-        to separate files so it makes sense
+    2. The bitmoji could wave maybe? That would be cool
  */
+@import url(../fonts/fonts.css);
+@import url(./partials/_variables.css);
+@import url(./partials/_global.css);
+
 
 /* NAVIGATION  */
 @import url(./header-nav.css);
