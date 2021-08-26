@@ -63,7 +63,7 @@
 
 p.para{
    color: var(--text-color);
-   font: normal 500 16px/25px 
+   font: normal 400 16px/25px 
    var(--main-font);
 }
 p.para span{

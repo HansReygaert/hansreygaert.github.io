@@ -26,23 +26,27 @@
 #interests .card-interests{
     background-color: whitesmoke;
     border-radius: 2rem;
-    margin: 5rem;
+    margin: 3rem;
     padding: 1rem;
     box-shadow: var(--box-shadow);
 }
 
-#interests .card-interests 
-.guitar img {
+#interests .card-interests
+img{
     margin: 1rem;
     border-radius: 2rem;
+    max-height: 30rem;
 }
 
-#interests .card-interests
-.guitar .artists{
-    height: 10rem;
-}
+
 
 #interests .card-interests
+p>img{
+    max-height:15rem;
+}
+
+
+/* #interests .card-interests
 .guitar .artists > img{
-    /* border-radius: 50%; */
-}
+    /* border-radius: 50%; 
+} */

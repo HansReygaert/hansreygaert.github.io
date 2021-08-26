@@ -5,26 +5,25 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 })
 
 
+// Small delay before moving on so animations can take effect
 function delay (URL) {
    setTimeout( function() { window.location = URL }, 300 );
 }
 
 const interests = document.querySelector('#interests .card-interests');
-let content = "";
+
+//Pre-load the interest content with a default state 
+$(document).ready(function($)
+{
+	displayGuitarHtml(interests);
+});
 
 function displayGuitarHtml(target){
-   console.log(target);
    // Not the best way of doing things but it serves it purpose for now
    displayCardInformation(interests, "../pages/guitar.html")
 }
 function displayFoodieHtml(){
    displayCardInformation( interests, "../pages/foodie.html" );
-}
-function displayCodeHtml(){
-   displayCardInformation( interests, "../pages/code.html" );
-}
-function displayWineHtml(){
-   displayCardInformation( interests, "../pages/wine.html" );
 }
 function displayRocketLeagueHtml(){
    displayCardInformation(interests, "../pages/rocket-league.html" );
