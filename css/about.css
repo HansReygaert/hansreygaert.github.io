@@ -17,7 +17,6 @@
 }
 .site-main .about-area 
 .about-image .container-resize img { 
-   margin-left: 3rem;
    border-radius: 5%;
    box-shadow: 10px 15px 25px 0
     rgba(0,0,0,0.3);

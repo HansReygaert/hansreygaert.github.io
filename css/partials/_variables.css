@@ -10,6 +10,7 @@ html, body{
 /* CSS VARIABLES */
 :root{
    --dark: rgb(45, 45, 45);
+   --dark-offset: rgb(80, 80, 80);
    --light: rgb(255,255,255);
    --light-offset: rgb(210,210,210);
 

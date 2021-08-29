@@ -18,3 +18,30 @@
 @import url(./about.css);
 /* DETAILS */
 @import url(interests.css);
+/* FOOTER */
+.footer{
+    background-color: var(--light);
+    color: var(--light-offset);
+    margin-top: 1rem;
+    font: var(--main-font);
+    font-weight: 700;
+    border-radius: 1.2rem 1.2rem 0 0;
+    font-size: smaller;
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--box-shadow);
+    padding-top: 3rem;
+}
+
+.footer span{
+
+    font-weight: 300;
+    font-size: medium;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.footer .copyright{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
