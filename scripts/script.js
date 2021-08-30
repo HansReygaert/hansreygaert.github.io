@@ -21,24 +21,19 @@ $(document).ready(function($)
 function displayGuitarHtml(target){
    // Not the best way of doing things but it serves it purpose for now
    injectHTMLInTarget(interests, "../pages/guitar.html")
-   delay("#guitar");
 }
 function displayFoodieHtml(){
    injectHTMLInTarget( interests, "../pages/foodie.html" );
-   delay("#foodie");
 }
 function displayRocketLeagueHtml(){
    injectHTMLInTarget(interests, "../pages/rocket-league.html" );
-   delay("#rocket-league");
 }
 function displayReadingHtml(){
    injectHTMLInTarget( interests, "../pages/reading.html" );
-   delay("#reading");
 }
 
 function displayCodeHtml(){
    injectHTMLInTarget( interests, "../pages/code.html");
-   delay("#code");
 }
 
 function injectHTMLInTarget(elementToDisplayIn, linkToPage){
