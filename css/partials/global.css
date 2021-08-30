@@ -84,10 +84,10 @@ p.para a{
    width: 15rem;
    height:auto;
    text-align: center;
+   color: var(--dark); 
 }
    .card a{
        text-decoration: none;
-       color: var(--dark); 
    }
    card:not(first-child){
        margin-left: var(--card-distance);
