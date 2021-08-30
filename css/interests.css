@@ -26,7 +26,7 @@
 #interests .card-interests{
     background-color: whitesmoke;
     border-radius: 2rem;
-    margin: 3rem;
+    margin: 3%;
     padding: 1rem;
     box-shadow: var(--box-shadow);
 }
