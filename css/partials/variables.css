@@ -12,6 +12,7 @@ html, body{
    --dark: rgb(45, 45, 45);
    --dark-offset: rgb(80, 80, 80);
    --light: rgb(255,255,255);
+   --light-transparent: rgba(255,255,255,0.5);
    --light-offset: rgb(210,210,210);
 
    --primary-color: rgb(15, 15, 248);

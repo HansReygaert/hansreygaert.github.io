@@ -22,7 +22,10 @@
 }
 
 .header_area .main-menu .navbar{
-   margin-left: 5rem;  
+   background-color: 
+   var(--light-transparent);
+   box-shadow: var(--box-shadow);
+   transition: top 0.3s;
 }
 .header_area.main-menu.navbar{
    padding: 1rem 20rem; 
@@ -54,5 +57,4 @@
    
    font-weight: 400;
    border-bottom: 1px solid;   
-   
 }

@@ -35,3 +35,16 @@ function displayReadingHtml(){
 function displayCardInformation(elementToDisplayIn, linkToPage){
    $(elementToDisplayIn).load(linkToPage);
 }
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+let prevScrollPosition = window.pageYOffset;
+const navbar = document.querySelector(".navbar");
+window.onscroll = () => {
+  let currentScrollPosition = window.pageYOffset;
+  if (prevScrollPosition > currentScrollPosition) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = "-150px";
+  }
+  prevScrollPosition = currentScrollPosition;
+}
