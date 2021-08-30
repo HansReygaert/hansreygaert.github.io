@@ -20,19 +20,28 @@ $(document).ready(function($)
 
 function displayGuitarHtml(target){
    // Not the best way of doing things but it serves it purpose for now
-   displayCardInformation(interests, "../pages/guitar.html")
+   injectHTMLInTarget(interests, "../pages/guitar.html")
+   delay("#guitar");
 }
 function displayFoodieHtml(){
-   displayCardInformation( interests, "../pages/foodie.html" );
+   injectHTMLInTarget( interests, "../pages/foodie.html" );
+   delay("#foodie");
 }
 function displayRocketLeagueHtml(){
-   displayCardInformation(interests, "../pages/rocket-league.html" );
+   injectHTMLInTarget(interests, "../pages/rocket-league.html" );
+   delay("#rocket-league");
 }
 function displayReadingHtml(){
-   displayCardInformation( interests, "../pages/reading.html" );
+   injectHTMLInTarget( interests, "../pages/reading.html" );
+   delay("#reading");
 }
 
-function displayCardInformation(elementToDisplayIn, linkToPage){
+function displayCodeHtml(){
+   injectHTMLInTarget( interests, "../pages/code.html");
+   delay("#code");
+}
+
+function injectHTMLInTarget(elementToDisplayIn, linkToPage){
    $(elementToDisplayIn).load(linkToPage);
 }
 

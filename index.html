@@ -36,9 +36,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#interests">Interests</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -66,7 +63,8 @@
               <div class="site-buttons">
                 <div class="d-flex flew-row flex-wrap">
                   <button type="button"	class="btn button primary-button text-uppercase" onclick="window.location='#about-me';">Find out more about me</button>
-                  <button type="button"	class="btn button secondary-button text-uppercase">See my blog</button>
+                  <button type="button"	class="btn button secondary-button text-uppercase" onclick="location.href='mailto:hansrdev@outlook.com';">
+                    Contact me</button>
                 </div>
               </div> 
             </div>
@@ -80,7 +78,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-12">
-                    <div class="about-image">
+                    <div class="about-image d-flex justify-content-evenly">
                       <div class="container-resize">
                         <img src="./images/hans/hans_faceshot_008-cropped.jpg" alt="About me" class="img-fluid">
                         <div class="glow-wrap"><i class="glow"></i></div>
@@ -134,30 +132,24 @@
               <!-- START CARDS -->
               <div class="cards d-flex justify-content-center">
                 <button class="card align-items-center" onclick="displayGuitarHtml(this)">
-                  <!-- Delaying these for touch screens, 
-                    otherwise we navigate to the link before the animation can take place -->
-                  <a href="javascript:delay('#guitar')">
                     <h2><span class="fas fa-guitar fa-2x card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">Play <br> the guitar</strong>
-                  </a>
                 </button>
                 <button class="card align-items-center" onclick="displayFoodieHtml()">
-                  <a href="javascript:delay('#foodie')">
                     <h2 class="card-title"><span class="fas fa-pizza-slice fa-2x card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">foodie</strong>
-                  </a>
                 </button>
                 <button class="card align-items-center" onclick="displayReadingHtml()">
-                  <a href="javascript:delay('#reading')">
                     <h2 class="card-title"><span class="fas fa-book-open fa-2x  card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">reading</strong>
-                  </a>
                 </button>
                 <button class="card align-items-center" onclick="displayRocketLeagueHtml()">
-                  <a href="javascript:delay('#rocket-league')">
                     <h2><span class="fas fa-car fa-2x card-icon"></span></h2>
                     <strong class="card-title d-none d-lg-block">rocket <br> league </strong> 
-                  </a>
+                </button>
+                <button class="card align-items-center" onclick="displayCodeHtml()">
+                    <h2><span class="fas fa-code fa-2x card-icon"></span></h2>
+                    <strong class="card-title d-none d-lg-block">Code </strong> 
                 </button>
               </div>
             </div>
@@ -169,6 +161,14 @@
                 </p>
               </section>
             </div>
+          </div>
+          <!-- PRE-LOAD THE IMAGES OF THE CARDS IN A HIDDEN DIV -->
+          <div class="d-none">
+            <img src="./images/interests/Ibanez_Jem7.jpg" alt="My guitar - Ibanez Jem7">
+            <img src="./images/hans/Hans_bbq.JPG" alt="Hans BBQ">
+            <img src="./images/hans/hans_fresh-pasta.jpg" alt="Hans Making Fresh Pasta">
+            <img src="./images/interests/books.jpg" alt="Clothbound books">
+            <img src="./images/interests/rocket-league.jpg" alt="Rocket-League">
           </div>
           <!-- END CARDS -->
         </div>
